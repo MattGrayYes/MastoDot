@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "tsx ./index.ts",
-    "mastodot": "tsx ./mastodot.ts",
-    "mastoprint": "tsx ./mastoprint.ts",
-    "imagetest": "tsx ./image.ts",
-    "texttest": "tsx ./text.ts"
+    "start": "tsx ./src/index.ts",
+    "mastodot": "tsx ./src/mastodot.ts",
+    "mastoprint": "tsx ./src/mastoprint.ts",
+    "imagetest": "tsx ./src/image.ts",
+    "texttest": "tsx ./src/text.ts"
   },
   "repository": {
     "type": "git",
