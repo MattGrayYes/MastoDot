@@ -8,7 +8,8 @@ import { Image } from "@node-escpos/core";
 import { MediaAttachment, Toot } from '../types';
 
 export default async function printToot(printer: IEpsonLX350CompatiblePrinter, contents: string) {
-    const toot = <Toot>JSON.parse(contents);
+    console.log("contents: "+contents);
+    const toot = <Toot> JSON.parse(contents);
 
     console.log(toot.account.display_name, toot.account.acct);
     console.log(convert(toot.content, convert_options));

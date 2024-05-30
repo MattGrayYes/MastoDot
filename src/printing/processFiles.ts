@@ -35,7 +35,7 @@ export async function processFiles(printer: IEpsonLX350CompatiblePrinter) {
 
             filetype === "txt"
                 ? await printer.text(contents).flush()
-                : await printToot(printer, JSON.parse(contents));
+                : await printToot(printer, contents);
 
         } catch (e) {
             console.error(`Error processing file ${file}: `, e);
